@@ -1,0 +1,33 @@
+header{
+  opacity: 0.7;
+}
+header nav{
+  height: 6em;
+}
+
+
+
+#soon-section {
+  position: relative;
+}
+#background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+}
+#soon {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+  background-color: rgb(248, 249, 250, 0.2);
+  padding: 1em;
+
+}
+#form-subscription{
+  width: 50%;
+}

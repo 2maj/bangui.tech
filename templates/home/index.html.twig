@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ "La centrafrique de demain" }}{% endblock %}
+
+{% block body %}
+
+  <section class=""  id="soon-section">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" id="background" muted="muted" loop="loop">
+      <source src="assets/images/bg.mp4" type="video/mp4">
+    </video>
+    <div class="" id="soon">
+      <div class="">
+        <div class="justify-content-center">
+          <h1 class="">Coming Soon !</h1>
+          <div>
+            <p>Le site est en cours de maintenance.</p>
+            <p>Soyez le premier à être au courant en vous abonnant.</p>
+            <p>Vous receverez les informations sur nos actualités, activités et forums</p>
+          </div>
+          {{ form_start(form, {'attr': {'id': 'form-subscription', 'action':path('subscrib')}}) }}
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                {{ form_widget(form.email, {'type' : 'email'}) }}
+              </div>
+              <div class="group mb-2">
+                {{ form_widget(form.subscrib, {'label': 'Abonné'}) }}
+              </div>
+
+          {{ form_end(form) }}
+        </div>
+      </div>
+      <div class="">
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+  </section>
+
+{% endblock %}
