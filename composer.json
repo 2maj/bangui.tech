@@ -1,5 +1,7 @@
 {
     "type": "project",
+    "name": "vendor/app",
+    "description": "Bangui tech is a project research and development in Central Republic",
     "license": "proprietary",
     "require": {
         "php": "^7.2.5",
